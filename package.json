@@ -1,0 +1,22 @@
+{
+  "name": "lmb",
+  "version": "0.0.1",
+  "description": "An application for LMB with user registration",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.15.2",
+    "handlebars": "^4.0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasfrigillana/lmb"
+  },
+  "keywords": [],
+  "license": "MIT"
+}
