@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
-var handlebars = require('handlebars')
+var handlebars = require('handlebars');
+var hbs = require('hbs');
+
 
 app.set('port', (process.env.PORT || 5000));
 

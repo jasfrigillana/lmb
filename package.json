@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "express": "4.15.2",
-    "handlebars": "^4.0.10"
+    "handlebars": "^4.0.10",
+    "hbs": "^4.0.1"
   },
   "repository": {
     "type": "git",
