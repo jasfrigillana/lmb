@@ -10,9 +10,14 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "cookie-parser": "^1.4.3",
     "express": "4.15.2",
+    "express-session": "^1.15.3",
     "handlebars": "^4.0.10",
-    "hbs": "^4.0.1"
+    "hbs": "^4.0.1",
+    "hbs-utils": "0.0.4",
+    "mongoose": "^4.10.8"
   },
   "repository": {
     "type": "git",
