@@ -15,11 +15,11 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Favicon and touch icons -->
-    <link rel="shortcut icon" href="ico/favicon.png">
+    {{!-- <link rel="shortcut icon" href="ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png"> --}}
 </head>
 
 <body>
@@ -27,7 +27,6 @@
     <div class="top-content">
         <div class="inner-bg">
             <div class="container">
-
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2 text">
                         <h1><strong>Land Summit Conference 2017</strong></h1>
@@ -54,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="form-bottom">
-                                <form role="form" action="" method="post" class="registration-form">
+                                <form role="form" action="/register" method="post" class="registration-form">
                                     <div class="form-group">
                                         <div class="col-sm-5">
                                             <hr/>
@@ -69,8 +68,8 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-title">Title</label>
-                                                <select name="form-title" class="form-title form-control" id="title">
+                                                <label class="text-label" for="title">Title</label>
+                                                <select name="title" class="title form-control" id="title" required>
                                                     <option>Mr.</option>
                                                     <option>Ms.</option>
                                                     <option>Mrs.</option>
@@ -82,8 +81,8 @@
                                                 </select>
                                             </div>
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-gender">Sex</label>
-                                                <select name="form-gender" class="form-gender form-control" id="gender">
+                                                <label class="text-label" for="gender">Sex</label>
+                                                <select name="gender" class="gender form-control" id="gender" required>
                                                     <option>Male</option>
                                                     <option>Female</option>
                                                 </select>
@@ -93,32 +92,32 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-first-name">First name</label>
-                                                <input type="text" name="form-first-name" placeholder="First name" class="form-first-name form-control" id="form-first-name">
+                                                <label class="text-label" for="firstName">First name</label>
+                                                <input type="text" name="firstName" placeholder="First name" class="firstName form-control" id="firstName" required>
                                             </div>
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-middle-name">Middle Name</label>
-                                                <input type="text" name="form-middle-name" placeholder="Middle name" class="form-middle-name form-control" id="form-middle-name">
+                                                <label class="text-label" for="middleName">Middle Name</label>
+                                                <input type="text" name="middleName" placeholder="Middle name" class="middleName form-control" id="middleName" required>
                                             </div>
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-last-name">Last Name</label>
-                                                <input type="text" name="form-last-name" placeholder="Last name" class="form-last-name form-control" id="form-last-name">
+                                                <label class="text-label" for="lastName">Last Name</label>
+                                                <input type="text" name="lastName" placeholder="Last name" class="lastName form-control" id="lastName" required>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-nickname">Nickname</label>
-                                                <input type="text" name="form-nickname" placeholder="Nickname" class="form-nickname form-control" id="form-nickname">
+                                                <label class="text-label" for="nickname">Nickname</label>
+                                                <input type="text" name="nickname" placeholder="Nickname" class="nickname form-control" id="nickname" required>
                                             </div>
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-position">Position</label>
-                                                <input type="text" name="form-position" placeholder="Position" class="form-position form-control" id="form-position">
+                                                <label class="text-label" for="position">Position</label>
+                                                <input type="text" name="position" placeholder="Position" class="position form-control" id="position" required>
                                             </div>
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-organization">Organization</label>
-                                                <input type="text" name="form-organization" placeholder="Organization" class="form-organization form-control" id="form-organization">
+                                                <label class="text-label" for="organization">Organization</label>
+                                                <input type="text" name="organization" placeholder="Organization" class="organization form-control" id="organization" required>
                                             </div>
                                         </div>
                                     </div>
@@ -136,32 +135,32 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-country">Country</label>
-                                                <select class="form-country form-control crs-country" data-region-id="form-province" id="form-country"></select>
+                                                <label class="text-label" for="country">Country</label>
+                                                <select class="country form-control crs-country" data-region-id="province" id="country" name="country" required></select>
                                             </div>
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-province">Region</label>
-                                                <select class="form-control" id="form-province"></select>
+                                                <label class="text-label" for="province">Province</label>
+                                                <select class="form-control" id="province" name="province" required></select>
                                             </div>
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-city">City</label>
-                                                <select class="form-city form-control crs-city" data-region-id="form-city" id="form-city"></select>
+                                                <label class="text-label" for="city">City</label>
+                                                <input type="text" name="city" placeholder="City" class="city form-control" id="city" required>{{!-- <select class="city form-control crs-city" data-region-id="city" name="city" id="city"></select> --}}
                                             </div>
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-barangay">Barangay</label>
-                                                <select class="form-control" id="form-barangay"></select>
+                                                <label class="text-label" for="barangay">Barangay</label>
+                                                <input type="text" name="barangay" placeholder="Barangay" class="barangay form-control" id="barangay" required>{{!-- <select class="form-control" id="barangay" name="barangay"></select> --}}
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-8">
-                                                <label class="sr-only" for="form-street">Street Address</label>
-                                                <input type="text" name="form-street" placeholder="Street Address" class="form-street form-control" id="form-street">
+                                                <label class="text-label" for="street">Street Address</label>
+                                                <input type="text" name="street" placeholder="Street Address" class="street form-control" id="street" required>
                                             </div>
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-postal-code">Postal Code</label>
-                                                <input type="text" name="form-postal-code" placeholder="Postal Code" class="form-postal-code form-control" id="form-postal-code">
+                                                <label class="text-label" for="postalCode">Postal Code</label>
+                                                <input type="text" name="postalCode" placeholder="Postal Code" class="postalCode form-control" id="postalCode" required>
                                             </div>
                                         </div>
                                     </div>
@@ -179,20 +178,26 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-mobile">Mobile Number</label>
-                                                <input type="text" name="form-mobile" placeholder="Mobile Number" class="form-mobile form-control" id="form-mobile">
+                                                <label class="text-label" for="mobile">Mobile Number</label>
+                                                <input type="text" name="mobile" placeholder="eg. +639491234567" class="mobile form-control" id="mobile" required>
                                             </div>
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-telephone">Telephone Number</label>
-                                                <input type="text" name="form-telephone" placeholder="Telephone Number" class="form-telephone form-control" id="form-telephone">
+                                                <div class="col-sm-5">
+                                                    <label class="text-label" for="areaCode">Area Code</label>
+                                                    <input type="text" name="areaCode" placeholder="" class="areaCode form-control" id="areaCode" required>
+                                                </div>
+                                                <div class="col-sm-7">
+                                                    <label class="text-label" for="telephone">Telephone</label>
+                                                    <input type="text" name="telephone" placeholder="" class="telephone form-control" id="telephone" required>
+                                                </div>
                                             </div>
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-email-address">Email Address</label>
-                                                <input type="text" name="form-email-address" placeholder="Email Address" class="form-email-address form-control" id="form-email-address">
+                                                <label class="text-label" for="emailAddress">Email Address</label>
+                                                <input type="email" name="emailAddress" placeholder="Email Address" class="emailAddress form-control" id="emailAddress" required>
                                             </div>
                                             <div class="col-sm-3">
-                                                <label class="sr-only" for="form-alternate-email-address">Alternate Email Address</label>
-                                                <input type="text" name="form-alternate-email-address" placeholder="Alternate Email Address" class="form-alternate-email-address form-control" id="form-alternate-email-address">
+                                                <label class="text-label" for="alternateEmailAddress">Alternate Email Address</label>
+                                                <input type="email" name="alternateEmailAddress" placeholder="Alternate Email Address" class="alternateEmailAddress form-control" id="alternateEmailAddress" required>
                                             </div>
                                         </div>
                                     </div>
@@ -210,9 +215,9 @@
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-sm-4">
-                                                <label class="sr-only" for="form-topic">Topic</label>
-                                                <select class="form-topic form-control" id="form-topic">
-                                                    <option>Topics:</option>
+                                                <label class="text-label" for="topic">Topic</label>
+                                                <select class="topic form-control" id="topic">
+                                                    <option>Topic of interest</option>
                                                 </select>
                                             </div>
                                         </div>

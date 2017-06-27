@@ -7,15 +7,17 @@ var hbs = require('hbs');
 var mongoose = require('mongoose');
 var hbsutils = require('hbs-utils')(hbs);
 var routes = require('./lib/routes');
+
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost/lmb');
-var db = mongoose.connection;
-db.on('error', console.error.bind(console, 'connection error:'));
-db.once('open', function() {
-  console.log('Connected to MongoDB.');
+var MongoDB = mongoose.connect('mongodb://localhost:27017/lmb').connection;
+MongoDB.on('error', function(err) { console.log(err.message); });
+MongoDB.once('open', function() {
+  console.log("mongodb connection open");
 });
 // Set port to 5000
 app.set('port', (process.env.PORT || 5000));
+
+// Set static files
 app.use(express.static(__dirname + '/public'));
 app.use(expressSession({
     secret: 'lmb2017',
@@ -27,7 +29,9 @@ app.use(bodyParser.urlencoded({
         extended: true
     }))
     .use(bodyParser.json());
+
 app.use('/node_modules', express.static(__dirname + '/node_modules'));
+
 // views is directory for all template files
 app.set('views', __dirname + '/views');
 app.set('view engine', 'hbs');

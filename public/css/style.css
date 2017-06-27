@@ -2,9 +2,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    color: #888;
+    color: #fff;
     line-height: 30px;
     text-align: center;
+}
+.text-label {
+    font-weight: 100;
 }
 strong {
     font-weight: 500;
