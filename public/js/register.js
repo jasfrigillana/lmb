@@ -1,18 +1,24 @@
 $(document).ready(function() {
+    $('.success').hide();
     var database = firebase.database();
 
     function writeUserData(details) {
-        	database.ref('users/' + details.nickname).set(details)
+        database.ref('users/' + details.nickname).set(details)
             .then(function() {
-                alert('Registered!');
+                console.log('Registered!');
+                $('.success').show();
+                document.getElementById("register").reset();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
             })
             .catch(function() {
-                alert('Failed to register!');
+                console.log('Failed to register!');
             });
     }
 
     $('#register').submit(function(event) {
         var details = [];
+        // For email verification
+        details['verified'] = false;
 
         $('#register input, #register select').each(
             function(index) {
@@ -30,7 +36,5 @@ $(document).ready(function() {
         );
 
         writeUserData(details);
-
-        console.log(details);
     });
 });
