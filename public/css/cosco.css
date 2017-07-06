@@ -1,0 +1,235 @@
+    /*FIRST HEADER*/
+
+.navbar-brand {
+    display: block;
+    float: none !important;
+    margin: auto;
+}
+
+i {
+    font-color: white !important;
+}
+
+#logopic {
+    float: right;
+    margin-left: -14px;
+    display: block;
+    float: none !important;
+    margin: auto !important;
+}
+
+.address-bar {
+    background-color: #f6f6f6;
+}
+
+
+/*.boxes{margin-top: 81px;}*/
+
+.side2 {
+    margin-left: 120px;
+}
+
+.side {
+    margin-right: 347px;
+    font-weight: bolder;
+}
+
+.font {
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .carousel-inner {
+        display: none;
+        margin-left: 10px;
+    }
+}
+
+.center-h1 {}
+
+.h1 {
+    /* font-weight: bold; */
+    /* margin-right: 556px; */
+}
+
+.summit1,
+.summit3 {
+    color: #000000;
+    font-size: 30px;
+}
+
+.summit2 {
+    color: #000000;
+    font-size: 45;
+    font-weight: bold;
+}
+
+.carousel-caption-banner {
+    position: absolute;
+    bottom: 20px;
+    top: 148px !important;
+    z-index: 10;
+    color: #635F5F;
+    text-align: left;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+@media screen (max-width:1000) {
+    .smallbox {
+        margin-top: 0px !important;
+        padding: 0px !important;
+        height: auto !important;
+    }
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .address-bar {
+        padding-top: 5px;
+        background-color: #f6f6f6;
+    }
+    h4.address {
+        padding-top: 10px;
+        color: #525252;
+        font-size: 15px;
+    }
+}
+
+
+/*IPHONE 5*/
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    h4.address {
+        padding-top: 10px;
+        color: #525252;
+        font-size: 14px;
+    }
+}
+
+
+/*IPHONE 6*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+    h4.address {
+        padding-top: 10px;
+        color: #525252;
+        font-size: 14px;
+    }
+}
+
+
+/*IPAD*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .address {
+        padding-top: 10px;
+        color: #525252;
+        font-size: 5px;
+    }
+}
+
+
+/*END FIRST HEADER*/
+
+
+/*----------------------------------------------------*/
+
+
+/*MAIN MENU*/
+
+.navbar-menu {
+    font-size: 15px;
+    border: none;
+}
+
+.brand-logo {
+    //background-image: url(../image/logofooter.png);
+    width: 250px;
+    height: 90px;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+.navigation-bar {
+    padding-top: 20px;
+}
+
+
+/*DESKTOP*/
+
+@media (min-width: 768px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        border: none;
+    }
+}
+
+.navbar {
+    width: 100%;
+    border: none;
+}
+
+
+/*END MAIN MENU*/
+
+.smallbox {
+    -webkit-box-shadow: 0px 0px 63px -18px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 63px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 63px -18px rgba(0, 0, 0, 0.75);
+    margin-top: -80px;
+    background-color: white;
+    height: 350px;
+    padding: 15px;
+}
+
+#smallboxpng {
+    padding: 40px;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+@media (max-width:900px) {
+    .summit1,
+    .summit3 {
+        font-size: 20px;
+    }
+    .summit2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .summit1,
+    .summit3 {
+        font-size: 20px;
+    }
+    .summit2 {
+        font-size: 25px;
+    }
+    #navbar-main {
+        display: none;
+    }
+    #navbar-collapse {
+        display: block;
+        text-align: right;
+    }
+    #smallbox-image {
+        display: none;
+    }
+    .smallbox {
+        margin-top: 10px;
+        height: auto;
+    }
+    #product {
+        margin: auto;
+        display: block;
+    }
+    .view-prod {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
