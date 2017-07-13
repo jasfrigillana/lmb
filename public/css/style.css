@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    color: #fff;
+    color: #000000;
     line-height: 30px;
     text-align: center;
     background: url('/img/bg/1.jpg') no-repeat center center fixed;
@@ -13,7 +13,8 @@ body {
 }
 
 .text-label {
-    font-weight: 100;
+    font-weight: 500;
+    color: #ffffff;
 }
 
 strong {
@@ -147,15 +148,15 @@ img {
 }
 
 .top-content .text {
-    margin-top: 3em;
+    margin-top: 5em;
 }
 
 .top-content .text {
-    color: #fff;
+    color: #000000;
 }
 
 .top-content .text h1 {
-    color: #fff;
+    color: #000000;
 }
 
 .top-content .text h2 {
@@ -187,7 +188,7 @@ img {
     overflow: hidden;
     padding: 0 25px 15px 25px;
     background: #444;
-    background: rgba(0, 0, 0, 0.70);
+    background: rgba(0, 0, 0, 0.78);
     -moz-border-radius: 4px 4px 0 0;
     -webkit-border-radius: 4px 4px 0 0;
     border-radius: 4px 4px 0 0;
@@ -224,7 +225,7 @@ img {
 .form-bottom {
     padding: 25px 25px 30px 25px;
     background: #444;
-    background: rgba(0, 0, 0, 0.77);
+    background: rgba(0, 0, 0, 0.90);
     -moz-border-radius: 0 0 4px 4px;
     -webkit-border-radius: 0 0 4px 4px;
     border-radius: 0 0 4px 4px;
