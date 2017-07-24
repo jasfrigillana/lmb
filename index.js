@@ -44,10 +44,10 @@ hbsutils.registerWatchedPartials(__dirname + '/views/partials');
 // });
 
 // var mailOptions = {
-//     from: 'sender address', // sender address 
-//     to: 'pelyllarrek-9800@yopmail.com', // list of receivers 
-//     subject: 'Password Reset', // Subject line 
-//     html: 'Your one time password is : <b>test </b>' // html body 
+//     from: 'sender address', // sender address
+//     to: 'pelyllarrek-9800@yopmail.com', // list of receivers
+//     subject: 'Password Reset', // Subject line
+//     html: 'Your one time password is : <b>test </b>' // html body
 // };
 
 // transporter.sendMail(mailOptions, function(error, info) {
