@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+{{>head}}
+
+<body id="page-top">
+    {{>nav}}
+    <div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1><strong>VIPs</strong></h1>
+                        <!-- Trigger the Modal -->
+                        <img src="/img/logos/DENR_Logo.png" alt="denr" width="50" height="50" id="myImg">
+                        <!-- The Modal -->
+                        <div id="vipModal" class="modal">
+                            <!-- The Close Button -->
+                            <span class="close" onclick="document.getElementById('vipModal').style.display='none'">&times;</span>
+                            <!-- Modal Content (The Image) -->
+                            <h3>VIP details</h3>
+                            <!-- Modal Caption (Image Text) -->
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    {{>footer}} {{>scripts}}
+    <script src="/js/vip.js"></script>
+</body>
+
+</html>
