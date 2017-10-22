@@ -6,7 +6,13 @@ var bodyParser = require('body-parser');
 var hbs = require('hbs');
 var hbsutils = require('hbs-utils')(hbs);
 var routes = require('./lib/routes');
-var nodemailer = require('nodemailer');
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'lmb',
+  password : 'jwr43JRjgf',
+  database : 'landsummit'
+});
 
 // Set port to 5000
 app.set('port', (process.env.PORT || 5000));
@@ -32,29 +38,7 @@ app.set('view engine', 'hbs');
 hbsutils.registerPartials(__dirname + '/views/partials');
 hbsutils.registerWatchedPartials(__dirname + '/views/partials');
 
-// create reusable transporter object using SMTP transport
-// var transporter = nodemailer.createTransport({
-// 	host: 'smtp.gmail.com',
-//     port: 465,
-//     secure: true, // secure:true for port 465, secure:false for port 587
-//     auth: {
-//         user: 'jasyfrig@gmail.com',
-//         pass: 'April31027'
-//     }
-// });
-
-// var mailOptions = {
-//     from: 'sender address', // sender address
-//     to: 'pelyllarrek-9800@yopmail.com', // list of receivers
-//     subject: 'Password Reset', // Subject line
-//     html: 'Your one time password is : <b>test </b>' // html body
-// };
-
-// transporter.sendMail(mailOptions, function(error, info) {
-//     console.log(error, info);
-// });
-
-routes(app);
+routes(app, connection);
 
 app.listen(app.get('port'), function() {
     console.log('LMB is running on port', app.get('port'));

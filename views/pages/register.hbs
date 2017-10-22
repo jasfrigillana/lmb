@@ -43,196 +43,226 @@
                                 </div>
                             </div>
                             <div class="form-bottom">
-                                <form role="form" id="register" class="registration-form">
-                                    <div class="form-group">
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <p class="divider">Personal Information</p>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="title">Title</label>
-                                                <select name="title" class="title form-control" id="title" required>
-                                                    <option>Mr.</option>
-                                                    <option>Ms.</option>
-                                                    <option>Mrs.</option>
-                                                    <option>Engr.</option>
-                                                    <option>Atty.</option>
-                                                    <option>Dr.</option>
-                                                    <option>Prof.</option>
-                                                    <option>Others</option>
-                                                </select>
-                                                <span class="error-message error-title" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="gender">Sex</label>
-                                                <select name="gender" class="gender form-control" id="gender" required>
-                                                    <option>Male</option>
-                                                    <option>Female</option>
-                                                </select>
-                                                <span class="error-message error-gender" style="display:none;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="firstName">First name</label>
-                                                <input type="text" name="firstName" placeholder="First name" class="firstName form-control" id="firstName" required>
-                                                <span class="error-message error-first-name" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="middleName">Middle Name</label>
-                                                <input type="text" name="middleName" placeholder="Middle name" class="middleName form-control" id="middleName" required>
-                                                <span class="error-message error-middle-name" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="lastName">Last Name</label>
-                                                <input type="text" name="lastName" placeholder="Last name" class="lastName form-control" id="lastName" required>
-                                                <span class="error-message error-last-name" style="display:none;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="nickname">Nickname</label>
-                                                <input type="text" name="nickname" placeholder="Nickname" class="nickname form-control" id="nickname" required>
-                                                <span class="error-message error-nickname" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="position">Position</label>
-                                                <input type="text" name="position" placeholder="Position" class="position form-control" id="position" required>
-                                                <span class="error-message error-position" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="organization">Organization</label>
-                                                <input type="text" name="organization" placeholder="Organization" class="organization form-control" id="organization" required>
-                                                <span class="error-message error-organization" style="display:none;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <p class="divider">Address Information</p>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="country">Country</label>
-                                                <select class="country form-control crs-country" data-region-id="province" id="country" name="country" required></select>
-                                                <span class="error-message error-country" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="province">Province</label>
-                                                <select class="form-control" id="province" name="province" required></select>
-                                                <span class="error-message error-province" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="city">City</label>
-                                                <input type="text" name="city" placeholder="City" class="city form-control" id="city" required>
-                                                <span class="error-message error-city" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="barangay">Barangay</label>
-                                                <input type="text" name="barangay" placeholder="Barangay" class="barangay form-control" id="barangay" required>
-                                                <span class="error-message error-barangay" style="display:none;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <label class="text-label" for="street">Street Address</label>
-                                                <input type="text" name="street" placeholder="Street Address" class="street form-control" id="street" required>
-                                                <span class="error-message error-street" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="postalCode">Postal Code</label>
-                                                <input type="text" name="postalCode" placeholder="Postal Code" class="postalCode form-control" id="postalCode" required>
-                                                <span class="error-message error-postal-code" style="display:none;"></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <p class="divider">Contact Information</p>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="mobile">Mobile Number</label>
-                                                <input type="text" name="mobile" placeholder="eg. +639491234567" class="mobile form-control" id="mobile" required>
-                                                <span class="error-message error-mobile" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <div class="col-sm-5">
-                                                    <label class="text-label" for="areaCode">Area Code</label>
-                                                    <input type="text" name="areaCode" placeholder="" class="areaCode form-control" id="areaCode" required>
-                                                    <span class="error-message error-area-code" style="display:none;"></span>
-                                                </div>
-                                                <div class="col-sm-7">
-                                                    <label class="text-label" for="telephone">Telephone</label>
-                                                    <input type="text" name="telephone" placeholder="" class="telephone form-control" id="telephone" required>
-                                                    <span class="error-message error-telephone" style="display:none;"></span>
+                                {{#if noAccessCode}}
+                                    <form role="form" id="access-code" class="access-code-form" action="/access-code" method="post">
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label class="access-code_label" for="access-code">Access Code</label>
+                                                    <input type="text" name="accessCode" placeholder="Enter access code" class="access-code form-control" id="access-code" required>
+                                                    {{#if invalid}}
+                                                        <span class="error-message error-code">{{message}}</span>
+                                                    {{/if}}
+                                                    {{#if used}}
+                                                        <span class="error-message error-code">{{message}}</span>
+                                                    {{/if}}
                                                 </div>
                                             </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="emailAddress">Email Address</label>
-                                                <input type="email" name="emailAddress" placeholder="Email Address" class="emailAddress form-control" id="emailAddress" required>
-                                                <span class="error-message error-email-address" style="display:none;"></span>
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <label class="text-label" for="alternateEmailAddress">Alternate Email Address</label>
-                                                <input type="email" name="alternateEmailAddress" placeholder="Alternate Email Address" class="alternateEmailAddress form-control" id="alternateEmailAddress" required>
-                                                <span class="error-message error-alternate-email-address" style="display:none;"></span>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label></label>
+                                                    <button id="btn-code" type="submit" class="btn">Submit</button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <p class="divider">Other Information</p>
-                                        </div>
-                                        <div class="col-sm-5">
-                                            <hr/>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <label class="text-label" for="topic">Topic</label>
-                                                <select class="topic form-control" id="topic" name="topic">
-                                                    <option>Topic of interest</option>
-                                                </select>
+                                    </form>
+                                {{else}}
+                                    <form role="form" id="register" class="registration-form">
+                                        <div class="form-group">
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <p class="divider">Personal Information</p>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <hr/>
                                             </div>
                                         </div>
-                                    </div>
-                                    <button id="btn-register" type="submit" class="btn">Sign me up!</button>
-                                </form>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="code">Access Code: {{accessCode}}</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="title">Title</label>
+                                                    <select name="title" class="title form-control" id="title" required>
+                                                        <option>Mr.</option>
+                                                        <option>Ms.</option>
+                                                        <option>Mrs.</option>
+                                                        <option>Engr.</option>
+                                                        <option>Atty.</option>
+                                                        <option>Dr.</option>
+                                                        <option>Prof.</option>
+                                                        <option>Others</option>
+                                                    </select>
+                                                    <span class="error-message error-title" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="gender">Sex</label>
+                                                    <select name="gender" class="gender form-control" id="gender" required>
+                                                        <option>Male</option>
+                                                        <option>Female</option>
+                                                    </select>
+                                                    <span class="error-message error-gender" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="firstName">First name</label>
+                                                    <input type="text" name="firstName" placeholder="First name" class="firstName form-control" id="firstName" required>
+                                                    <span class="error-message error-first-name" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="middleName">Middle Name</label>
+                                                    <input type="text" name="middleName" placeholder="Middle name" class="middleName form-control" id="middleName" required>
+                                                    <span class="error-message error-middle-name" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="lastName">Last Name</label>
+                                                    <input type="text" name="lastName" placeholder="Last name" class="lastName form-control" id="lastName" required>
+                                                    <span class="error-message error-last-name" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="nickname">Nickname</label>
+                                                    <input type="text" name="nickname" placeholder="Nickname" class="nickname form-control" id="nickname" required>
+                                                    <span class="error-message error-nickname" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="position">Position</label>
+                                                    <input type="text" name="position" placeholder="Position" class="position form-control" id="position" required>
+                                                    <span class="error-message error-position" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="organization">Organization</label>
+                                                    <input type="text" name="organization" placeholder="Organization" class="organization form-control" id="organization" required>
+                                                    <span class="error-message error-organization" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <p class="divider">Address Information</p>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="country">Country</label>
+                                                    <select class="country form-control crs-country" data-region-id="province" id="country" name="country" required></select>
+                                                    <span class="error-message error-country" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="province">Province</label>
+                                                    <select class="form-control" id="province" name="province" required></select>
+                                                    <span class="error-message error-province" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="city">City</label>
+                                                    <input type="text" name="city" placeholder="City" class="city form-control" id="city" required>
+                                                    <span class="error-message error-city" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="barangay">Barangay</label>
+                                                    <input type="text" name="barangay" placeholder="Barangay" class="barangay form-control" id="barangay" required>
+                                                    <span class="error-message error-barangay" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-8">
+                                                    <label class="text-label" for="street">Street Address</label>
+                                                    <input type="text" name="street" placeholder="Street Address" class="street form-control" id="street" required>
+                                                    <span class="error-message error-street" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="postalCode">Postal Code</label>
+                                                    <input type="text" name="postalCode" placeholder="Postal Code" class="postalCode form-control" id="postalCode" required>
+                                                    <span class="error-message error-postal-code" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <p class="divider">Contact Information</p>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="mobile">Mobile Number</label>
+                                                    <input type="text" name="mobile" placeholder="eg. +639491234567" class="mobile form-control" id="mobile" required>
+                                                    <span class="error-message error-mobile" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <div class="col-sm-5">
+                                                        <label class="text-label" for="areaCode">Area Code</label>
+                                                        <input type="text" name="areaCode" placeholder="" class="areaCode form-control" id="areaCode" required>
+                                                        <span class="error-message error-area-code" style="display:none;"></span>
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <label class="text-label" for="telephone">Telephone</label>
+                                                        <input type="text" name="telephone" placeholder="" class="telephone form-control" id="telephone" required>
+                                                        <span class="error-message error-telephone" style="display:none;"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="emailAddress">Email Address</label>
+                                                    <input type="email" name="emailAddress" placeholder="Email Address" class="emailAddress form-control" id="emailAddress" required>
+                                                    <span class="error-message error-email-address" style="display:none;"></span>
+                                                </div>
+                                                <div class="col-sm-3">
+                                                    <label class="text-label" for="alternateEmailAddress">Alternate Email Address</label>
+                                                    <input type="email" name="alternateEmailAddress" placeholder="Alternate Email Address" class="alternateEmailAddress form-control" id="alternateEmailAddress" required>
+                                                    <span class="error-message error-alternate-email-address" style="display:none;"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <p class="divider">Other Information</p>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <hr/>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <label class="text-label" for="topic">Topic</label>
+                                                    <select class="topic form-control" id="topic" name="topic">
+                                                        <option>Topic of interest</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button id="btn-register" type="submit" class="btn">Sign me up!</button>
+                                    </form>
+                                {{/if}}
                             </div>
                         </div>
                     </div>
