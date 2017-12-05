@@ -9,8 +9,8 @@ var routes = require('./lib/routes');
 var mysql = require('mysql');
 var connection = mysql.createConnection({
   host     : 'localhost',
-  user     : 'lmb',
-  password : 'jwr43JRjgf',
+  user     : 'root',
+  password : '',
   database : 'landsummit'
 });
 
