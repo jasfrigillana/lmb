@@ -28,11 +28,13 @@
                                     <h3 style="color:#e31919;" id="error-message"></h3>
                                 </div>
                             </div>
-                            <div class="form-top success">
-                                <div class="form-top-left">
-                                    <h3 style="color:green;" id="success-message"><strong>Successfully registered. Kindly verify your email.</strong></h3>
+                            {{#if registered}}
+                                <div class="form-top success">
+                                    <div class="form-top-left">
+                                        <h3 style="color:green;" id="success-message"><strong>You are now registered.</strong></h3>
+                                    </div>
                                 </div>
-                            </div>
+                            {{/if}}
                             <div class="form-top">
                                 <div class="form-top-left">
                                     <h3>Register now</h3>

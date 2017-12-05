@@ -1,5 +1,4 @@
-$(document).ready(function() {  
-    $('.success').hide();
+$(document).ready(function() {
     $('.error').hide();
 
     function writeUserData(details) {
