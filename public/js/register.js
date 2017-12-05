@@ -1,17 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function() {  
     $('.success').hide();
     $('.error').hide();
-
-    var database = firebase.database();
-    var count = '';
-
-    function getTotal() {
-        database.ref('users/').once('value', function(snapshot) {
-            count = snapshot.numChildren();
-            console.log(count + ' getTotal');
-            return count;
-        });
-    }
 
     function writeUserData(details) {
         var mobile = $('#mobile').val();
