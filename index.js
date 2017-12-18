@@ -56,11 +56,19 @@ nodemailer.createTestAccount((err, account) => {
 
     // setup email data with unicode symbols
     var mailOptions = {
-        from: '"Fred Foo 👻" <jamfrig@gmail.com>', // sender address
-        to: 'jamfrig@gmail.com', // list of receivers
-        subject: 'Hello ✔', // Subject line
-        text: 'Hello world?', // plain text body
-        html: '<b>Hello world?</b>' // html body
+        from: 'jasyfrigi@gmail.com', // sender address
+        to: 'jasyfrigi@gmail.com', // list of receivers
+        subject: 'Registration', // Subject line
+        text: 'Greetings!' +
+          'Thank you for your registration to the National Land Summit 2018! You will be notified ' +
+          'once your office confirmed your participation in this event.' +
+          'Very truly yours,<br/><br/>' +
+          'Web Team<br/>National Land Summit 2018', // plain text body
+        html: 'Greetings! <br/><br/>'+
+          'Thank you for your registration to the National Land Summit 2018! You will be notified ' +
+          'once your office confirmed your participation in this event.<br/><br/>' +
+          'Very truly yours,<br/><br/>' +
+          'Web Team<br/>National Land Summit 2018'
     };
 
     // send mail with defined transport object
