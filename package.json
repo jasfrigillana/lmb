@@ -19,7 +19,7 @@
     "hbs": "^4.0.1",
     "hbs-utils": "0.0.4",
     "mysql": "github:mysqljs/mysql",
-    "nodemailer": "^4.0.1"
+    "nodemailer": "^4.4.1"
   },
   "repository": {
     "type": "git",
